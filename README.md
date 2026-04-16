@@ -4,6 +4,12 @@ dspace-angular
 ==============
 
 > The DSpace User Interface built on [Angular](https://angular.io/), written in [TypeScript](https://www.typescriptlang.org/) and using [Angular Universal](https://angular.io/guide/universal).
+>
+> DO THIS
+> git clone https://github.com/DSpace/dspace-angular.git
+cd dspace-angular
+npm install
+npm start
 
 Overview
 --------
