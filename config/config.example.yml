@@ -238,7 +238,7 @@ submission:
 #  Fallback language in which the UI will be rendered if the user's browser language is not an active language
 fallbackLanguage: en
 
-# Languages. DSpace Angular holds a message catalog for each of the following languages.
+# Languages. UIST Angular holds a message catalog for each of the following languages.
 # When set to active, users will be able to switch to the use of this language in the user interface.
 languages:
   - code: en
@@ -440,7 +440,7 @@ themes:
   # # A theme with only a name will match every route
   # name: custom
   #
-  # # This theme will use the default bootstrap styling for DSpace components
+  # # This theme will use the default bootstrap styling for UIST components
   # - name: BASE_THEME_NAME
   #
   - name: dspace
@@ -582,7 +582,7 @@ notifyMetrics:
 # Live regions are perceivable regions of a web page that are typically updated as a
 # result of an external event when user focus may be elsewhere.
 #
-# The DSpace live region is a component present at the bottom of all pages that is invisible by default, but is useful
+# The UIST live region is a component present at the bottom of all pages that is invisible by default, but is useful
 # for screen readers. Any message pushed to the live region will be announced by the screen reader. These messages
 # usually contain information about changes on the page that might not be in focus.
 liveRegion:
@@ -606,7 +606,7 @@ geospatialMapViewer:
   spatialPointFilterName: 'point'
   # Whether item page geospatial metadata should be displayed
   # (assumes they are wrapped in a test for this config in the template as
-  # per the default templates supplied with DSpace for untyped-item and publication)
+  # per the default templates supplied with UIST for untyped-item and publication)
   enableItemPageFields: false
   # Whether the browse map should be enabled and included in the browse menu
   enableBrowseMap: false

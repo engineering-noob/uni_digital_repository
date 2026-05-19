@@ -1,0 +1,60 @@
+:host {
+  header {
+    background: var(--ds-header-bg);
+    box-shadow: 0 8px 24px rgba(8, 34, 58, 0.08);
+  }
+
+  .header-shell {
+    min-height: 60px;
+  }
+
+  .navbar-brand {
+    display: inline-flex;
+    align-items: center;
+    min-width: 0;
+  }
+
+  .navbar-brand img {
+    max-height: 38px;
+    max-width: min(443px, 52vw);
+    object-fit: contain;
+  }
+
+  .navbar-toggler {
+    border: 0;
+    color: var(--ds-header-icon-color);
+
+    &:hover,
+    &:focus {
+      color: var(--ds-header-icon-color-hover);
+    }
+
+    .toggler-icon {
+      height: 1.5em;
+      line-height: 1.5;
+      width: 1.5em;
+    }
+  }
+
+  .navbar,
+  div[role="toolbar"] {
+    align-items: center;
+    display: flex;
+    gap: calc(var(--bs-spacer) / 2);
+  }
+
+  @media screen and (max-width: map-get($grid-breakpoints, md)-0.02) {
+    .navbar-brand img {
+      content: url("/assets/custom/images/uist-mobile-logo.png");
+      max-width: min(300px, 62vw);
+    }
+  }
+
+  div[role="toolbar"] ::ng-deep {
+    button.dropdown-toggle,
+    a.loginLink,
+    a.logoutLink {
+      font-size: 1.15rem !important;
+    }
+  }
+}

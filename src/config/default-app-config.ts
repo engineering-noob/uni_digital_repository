@@ -256,7 +256,7 @@ export class DefaultAppConfig implements AppConfig {
   // Fallback language in which the UI will be rendered if the user's browser language is not an active language
   fallbackLanguage = 'en';
 
-  // Languages. DSpace Angular holds a message catalog for each of the following languages.
+  // Languages. UIST Angular holds a message catalog for each of the following languages.
   // When set to active, users will be able to switch to the use of this language in the user interface.
   languages: LangConfig[] = [
     { code: 'en', label: 'English', active: true },
@@ -415,7 +415,7 @@ export class DefaultAppConfig implements AppConfig {
     //   name: 'custom'
     // },
     // {
-    //   // This theme will use the default bootstrap styling for DSpace components
+    //   // This theme will use the default bootstrap styling for UIST components
     //   name: BASE_THEME_NAME
     // },
 

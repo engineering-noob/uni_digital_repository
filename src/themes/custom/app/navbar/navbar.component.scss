@@ -1,0 +1,78 @@
+:host {
+  --ds-expandable-navbar-height: auto;
+
+  nav.navbar {
+    align-items: baseline;
+    background: var(--uist-navy);
+    min-height: 48px;
+    padding: 0;
+  }
+
+  @media screen and (max-width: map-get($grid-breakpoints, md)-0.02) {
+    .navbar {
+      background: var(--uist-ink);
+      height: 0;
+      overflow: hidden;
+      position: absolute;
+      width: 100vw;
+      z-index: var(--ds-nav-z-index);
+
+      &.open {
+        height: auto;
+        min-height: 100vh;
+      }
+    }
+  }
+
+  .navbar-expand-md.navbar-container {
+    @media screen and (max-width: map-get($grid-breakpoints, md)-0.02) {
+      padding: 0;
+
+      > .navbar-inner-container {
+        padding: 0 var(--bs-spacer);
+      }
+    }
+  }
+
+  #main-navbar ::ng-deep {
+    .ds-menu-item,
+    .ds-menu-toggler-wrapper {
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .ds-menu-item {
+      color: rgba(255, 255, 255, 0.92);
+      display: block;
+      font-size: 1.15rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      padding: 0.8rem 1.1rem;
+
+      &:hover,
+      &:focus {
+        background: rgba(107, 182, 223, 0.18);
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+
+    .dropdown-menu {
+      border: 0;
+      border-top: 3px solid var(--uist-sky);
+      box-shadow: 0 16px 36px rgba(8, 34, 58, 0.18);
+      padding: 0.5rem !important;
+
+      .ds-menu-item {
+        color: var(--uist-ink);
+        font-size: 1.05rem;
+
+        &:hover,
+        &:focus {
+          background: var(--uist-ice);
+          color: var(--uist-blue);
+        }
+      }
+    }
+  }
+}

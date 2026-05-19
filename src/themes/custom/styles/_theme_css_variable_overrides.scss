@@ -1,8 +1,37 @@
 // Override or add CSS variables for your theme here
 
 :root {
-  //--ds-header-logo-height: 80px;
-  //--ds-header-logo-height-xs: 50px;
-  //--ds-header-icon-color: #{$link-color};
-  //--ds-header-icon-color-hover: #{darken($link-color, 15%)};
+  --uist-ink: #{$uist-ink};
+  --uist-navy: #{$uist-navy};
+  --uist-blue: #{$uist-blue};
+  --uist-sky: #{$uist-sky};
+  --uist-ice: #{$uist-ice};
+  --uist-cloud: #{$uist-cloud};
+  --uist-charcoal: #{$uist-charcoal};
+  --uist-line: rgba(10, 61, 104, 0.16);
+
+  // Legacy aliases used by existing custom components.
+  --uist-teal: #{$uist-blue};
+  --uist-gold: #{$uist-sky};
+
+  --ds-header-height: 94px;
+  --ds-header-logo-height: 72px;
+  --ds-header-logo-height-xs: 56px;
+  --ds-header-icon-color: #{$uist-navy};
+  --ds-header-icon-color-hover: #{$uist-blue};
+  --ds-navbar-bg: #{$uist-ink};
+  --ds-navbar-link-color: #fff;
+  --ds-navbar-link-color-hover: #{$uist-sky};
+  --ds-header-navbar-border-bottom-color: #{$uist-sky};
+  --ds-top-footer-bg: #{$uist-ink};
+  --ds-footer-bg: #{$uist-ink};
+  --ds-footer-border: 0;
+  --ds-footer-padding: 0;
+  --ds-breadcrumb-bg: #{$uist-ice};
+  --ds-breadcrumb-link-color: #{$uist-navy};
+
+  @include media-breakpoint-down(sm) {
+    --ds-header-height: 78px;
+    --ds-header-logo-height: 52px;
+  }
 }

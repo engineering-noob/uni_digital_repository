@@ -1,4 +1,5 @@
 .login-logo {
-  height: var(--ds-login-logo-height);
-  width: var(--ds-login-logo-width);
+  max-height: var(--ds-login-logo-height);
+  max-width: 100%;
+  width: auto;
 }

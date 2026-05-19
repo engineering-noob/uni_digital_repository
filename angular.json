@@ -30,7 +30,12 @@
               "lodash",
               "jwt-decode",
               "uuid",
-              "zone.js"
+              "zone.js",
+              "orejime/dist/orejime",
+              "leaflet",
+              "leaflet-providers",
+              "leaflet.markercluster",
+              "date-fns-tz"
             ],
             "outputPath": "dist/browser",
             "index": "src/index.html",

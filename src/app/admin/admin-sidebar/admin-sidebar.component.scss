@@ -58,7 +58,8 @@
 
       // These classes handle the collapsing behavior
       .sidebar-section-wrapper {
-
+        width: 100%;
+        cursor: pointer;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;

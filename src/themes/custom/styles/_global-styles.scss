@@ -2,3 +2,97 @@
 
 // imports the base global style
 @import '../../../styles/_global-styles.scss';
+
+body {
+  background:
+    linear-gradient(180deg, #fff 0, var(--uist-ice) 460px, var(--uist-cloud) 100%);
+  color: var(--uist-charcoal);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--uist-ink);
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+a {
+  color: var(--uist-navy);
+
+  &:hover,
+  &:focus {
+    color: var(--uist-blue);
+  }
+}
+
+.btn-primary,
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  background-color: var(--uist-navy);
+  border-color: var(--uist-navy);
+  color: #fff;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--uist-blue);
+  border-color: var(--uist-blue);
+  color: #fff;
+}
+
+.btn-outline-primary {
+  border-color: var(--uist-blue);
+  color: var(--uist-navy);
+}
+
+.btn-secondary {
+  background-color: var(--uist-charcoal);
+  border-color: var(--uist-charcoal);
+}
+
+.badge.bg-primary,
+.text-bg-primary {
+  background-color: var(--uist-navy) !important;
+}
+
+.text-primary {
+  color: var(--uist-blue) !important;
+}
+
+.breadcrumb {
+  background-color: var(--uist-ice);
+  border-left: 4px solid var(--uist-sky);
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: var(--uist-navy);
+}
+
+.card,
+.list-group-item,
+.page-item .page-link,
+.form-control,
+.form-select {
+  border-color: var(--uist-line);
+}
+
+.page-item.active .page-link {
+  background-color: var(--uist-navy);
+  border-color: var(--uist-navy);
+}
+
+#admin-sidebar h4 {
+  color: white !important;
+}
+
+#admin-sidebar * {
+  color: #ffffff !important;
+}
+#admin-sidebar a {
+  color: #6bb6df !important;
+}

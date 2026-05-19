@@ -6,6 +6,7 @@ import { EndUserAgreementComponent as BaseComponent } from '../../../../../app/i
 import { EndUserAgreementContentComponent } from '../../../../../app/info/end-user-agreement/end-user-agreement-content/end-user-agreement-content.component';
 import { BtnDisabledDirective } from '../../../../../app/shared/btn-disabled.directive';
 
+
 @Component({
   selector: 'ds-themed-end-user-agreement',
   // styleUrls: ['./end-user-agreement.component.scss'],
