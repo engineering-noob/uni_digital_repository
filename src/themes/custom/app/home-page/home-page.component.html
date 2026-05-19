@@ -42,96 +42,20 @@
       <p class="uist-section-sub">Explore curated collections of academic research and scholarly publications</p>
     </div>
     <div class="row g-3 justify-content-center">
-      <div class="col-6 col-sm-4 col-md-3">
-        <a routerLink="/collections/1a12d3de-e28c-48ea-94c7-f093801f0060" class="uist-feature-link">
-          <div class="uist-feature">
-            <div class="uist-feature__icon">
-              <span class="fas fa-chart-line" aria-hidden="true"></span>
-            </div>
-            <h3>Impact Factor Articles</h3>
+      @if (categoryCollections$ | async; as categoryCollections) {
+        @for (collection of categoryCollections; track collection.uuid) {
+          <div class="col-6 col-sm-4 col-md-3">
+            <a [routerLink]="['/collections', collection.uuid]" class="uist-feature-link">
+              <div class="uist-feature">
+                <div class="uist-feature__icon">
+                  <span [class]="collection.iconClass" aria-hidden="true"></span>
+                </div>
+                <h3>{{ collection.name }}</h3>
+              </div>
+            </a>
           </div>
-        </a>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3">
-        <a routerLink="/collections/aabc5b35-d5f0-4417-983a-c4e23e86718d" class="uist-feature-link">
-          <div class="uist-feature">
-            <div class="uist-feature__icon">
-              <span class="fas fa-list-ol" aria-hidden="true"></span>
-            </div>
-            <h3>Indexed Journal Articles</h3>
-          </div>
-        </a>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3">
-        <a routerLink="/collections/505afcbd-03e2-43e9-b6d4-1a158e36b72b" class="uist-feature-link">
-          <div class="uist-feature">
-            <div class="uist-feature__icon">
-              <span class="fas fa-user-edit" aria-hidden="true"></span>
-            </div>
-            <h3>International Editorial Journals</h3>
-          </div>
-        </a>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3">
-        <a routerLink="/collections/63523334-6ed3-4dd1-84a5-2233e9a3e20b" class="uist-feature-link">
-          <div class="uist-feature">
-            <div class="uist-feature__icon">
-              <span class="fas fa-globe-europe" aria-hidden="true"></span>
-            </div>
-            <h3>EU OECD Journals</h3>
-          </div>
-        </a>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3">
-        <a routerLink="/collections/339a35af-be89-4d11-ae31-4628471ead11" class="uist-feature-link">
-          <div class="uist-feature">
-            <div class="uist-feature__icon">
-              <span class="fas fa-flask" aria-hidden="true"></span>
-            </div>
-            <h3>Scientific Professional Journals</h3>
-          </div>
-        </a>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3">
-        <a routerLink="/collections/a1cc8633-0c03-4d87-98d0-1a676950ce74" class="uist-feature-link">
-          <div class="uist-feature">
-            <div class="uist-feature__icon">
-              <span class="fas fa-book-reader" aria-hidden="true"></span>
-            </div>
-            <h3>Peer Reviewed Books</h3>
-          </div>
-        </a>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3">
-        <a routerLink="/collections/8dbd66ed-f31a-4e2f-9801-fcfeda959970" class="uist-feature-link">
-          <div class="uist-feature">
-            <div class="uist-feature__icon">
-              <span class="fas fa-atlas" aria-hidden="true"></span>
-            </div>
-            <h3>Professional Field Books</h3>
-          </div>
-        </a>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3">
-        <a routerLink="/collections/1883f19e-4982-4570-90b7-690a025e823b" class="uist-feature-link">
-          <div class="uist-feature">
-            <div class="uist-feature__icon">
-              <span class="fas fa-chalkboard-teacher" aria-hidden="true"></span>
-            </div>
-            <h3>International Conference Papers</h3>
-          </div>
-        </a>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3">
-        <a routerLink="/search" class="uist-feature-link">
-          <div class="uist-feature">
-            <div class="uist-feature__icon">
-              <span class="fas fa-layer-group" aria-hidden="true"></span>
-            </div>
-            <h3>Additional Publications</h3>
-          </div>
-        </a>
-      </div>
+        }
+      }
     </div>
   </div>
 </section>
